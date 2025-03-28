@@ -5,6 +5,9 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
   opts = {
+    window = {
+      width = 60, -- Width of the NeoTree window
+    },
     filesystem = {
       filtered_items = {
         hide_dotfiles = false,
