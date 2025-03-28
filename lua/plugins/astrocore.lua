@@ -66,6 +66,19 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+        ["<leader>G"] = { name = "GitHub Copilot" },
+        ["<leader>GG"] = {
+          "<cmd>lua require('copilot.panel').open({ position='right', ratio=0.4 })<CR>",
+          desc = "Open Copilot Panel in split right",
+        },
+        ["<leader>Gr"] = { "<cmd>lua require('copilot.panel').refresh()<CR>", desc = "Refresh suggestions" },
+
+        -- vim-easy-align mappings
+        ["ga"] = { ":EasyAlign ", desc = "EasyAlign" },
+      },
+      v = {
+        -- vim-easy-align mappings
+        ["ga"] = { ":EasyAlign ", desc = "EasyAlign" },
       },
     },
   },
