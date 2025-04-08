@@ -14,5 +14,6 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.syntax.vim-easy-align" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   -- import/override with your plugins folder
 }
