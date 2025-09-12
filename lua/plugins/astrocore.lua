@@ -86,7 +86,7 @@ return {
         ["<C-q>"] = false, -- disable force quit
 
         -- Unset default AstroNvim leader mappings that will close or write buffers
-        ["<Leader>c"] = false,
+        ["<Leader>c"] = { desc = "CopilotChat attached" },
         ["<Leader>C"] = false,
         ["<Leader>q"] = false,
         ["<Leader>w"] = false,
