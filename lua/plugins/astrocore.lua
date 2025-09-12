@@ -84,6 +84,14 @@ return {
         -- Unset default AstroNvim mappings
         ["<C-s>"] = false, -- disable force write
         ["<C-q>"] = false, -- disable force quit
+
+        -- Unset default AstroNvim leader mappings that will close or write buffers
+        ["<Leader>c"] = false,
+        ["<Leader>C"] = false,
+        ["<Leader>q"] = false,
+        ["<Leader>w"] = false,
+        ["<Leader>Q"] = false,
+        ["<Leader>W"] = false,
       },
       v = {
         -- vim-easy-align mappings
