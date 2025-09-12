@@ -80,6 +80,10 @@ return {
 
         -- vim-easy-align mappings
         ["ga"] = { ":EasyAlign ", desc = "EasyAlign" },
+
+        -- Unset default AstroNvim mappings
+        ["<C-s>"] = false, -- disable force write
+        ["<C-q>"] = false, -- disable force quit
       },
       v = {
         -- vim-easy-align mappings
