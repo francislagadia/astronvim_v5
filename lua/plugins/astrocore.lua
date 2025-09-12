@@ -71,7 +71,7 @@ return {
         -- ["<C-S>"] = false,
 
         -- add mapping for GitHub Copilot commands
-        ["<Leader>G"] = { name = "GitHub Copilot" },
+        ["<Leader>G"] = { desc = "GitHub Copilot" },
         ["<Leader>GG"] = {
           "<cmd>lua require('copilot.panel').open({ position='right', ratio=0.4 })<CR>",
           desc = "Open Copilot Panel in split right",
