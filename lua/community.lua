@@ -16,6 +16,7 @@ return {
   { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
+  { import = "astrocommunity.programming-language-support.rest-nvim" },
   { import = "astrocommunity.snippet.nvim-snippets" },
   { import = "astrocommunity.syntax.vim-easy-align" },
   -- import/override with your plugins folder
