@@ -9,7 +9,7 @@ return {
   "AstroNvim/astrocommunity",
   { import = "astrocommunity.ai.opencode-nvim" },
   { import = "astrocommunity.completion.copilot-lua-cmp" },
-  -- { import = "astrocommunity.completion.codex-nvim" },
+  { import = "astrocommunity.completion.codex-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.conform-nvim" },
   { import = "astrocommunity.editing-support.copilotchat-nvim" },
