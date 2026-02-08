@@ -10,19 +10,6 @@ return {
     },
     filesystem = {
       filtered_items = {
-        hide_dotfiles = false,
-        hide_by_name = {
-          ".DS_Store",
-          ".git",
-          ".hypothesis",
-          ".idea",
-          ".pytest_cache",
-          ".ruff_cache",
-          ".tox",
-          "__pycache__",
-          "node_modules",
-          "thumbs.db",
-        },
         always_show = {
           ".gitignore",
           ".pylintrc",
@@ -30,10 +17,44 @@ return {
           "pyproject.toml",
           "pyrightconfig.json",
         },
+        hide_by_name = {
+          ".DS_Store",
+          ".hypothesis",
+          ".idea",
+          ".pytest_cache",
+          ".ruff_cache",
+          ".tox",
+          "thumbs.db",
+        },
+        hide_by_pattern = {
+          "**/.git/**",
+          "**/.venv/**",
+          "**/__pycache__/**",
+          "**/build/**",
+          "**/dist/**",
+          "**/node_modules/**",
+          -- macOS user-level system dirs
+          "**/Applications/**",
+          "**/Library/**",
+          "**/System/**",
+          "**/Volumes/**",
+          "**/private/**",
+          -- Optional: other noisy home dirs
+          "**/Movies/**",
+          "**/Music/**",
+          "**/Pictures/**",
+          "**/Public/**",
+          -- Finder junk
+          "**/.DS_Store",
+          "**/._*",
+        },
+        hide_dotfiles = false,
+        hide_gitignored = true,
         never_show_by_pattern = {
           "**/*.py[a-zA-Z]",
         },
       },
+      scan_depth = 3, -- Limit the depth of directory scanning to 3 levels
     },
   },
 }
