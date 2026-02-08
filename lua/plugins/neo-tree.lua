@@ -54,6 +54,7 @@ return {
           "**/*.py[a-zA-Z]",
         },
       },
+      follow_current_file = true, -- Automatically focus the NeoTree window on the current file
       scan_depth = 3, -- Limit the depth of directory scanning to 3 levels
     },
   },
