@@ -44,8 +44,9 @@ return {
   -- Lua tooling: lua_ls + stylua (+ optional selene) + treesitter + mason installers
   { import = "astrocommunity.pack.lua" },
 
-  -- Python (ruff-first) tooling: ruff LSP + ruff format/imports; removes black/isort from installer lists
-  { import = "astrocommunity.pack.python-ruff" },
+  -- Python tooling: ensures python treesitter/debugpy; adds venv selector, dap-python, neotest adapter
+  { import = "astrocommunity.pack.python.base" },
+  { import = "astrocommunity.pack.python.ruff" },
 
   -- TOML tooling: taplo + treesitter + mason installers
   { import = "astrocommunity.pack.toml" },
