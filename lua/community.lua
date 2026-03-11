@@ -32,6 +32,9 @@ return {
   -- Undotree: visual undo history; community spec maps <Leader>fu (collides with AstroNvim "find undo")
   { import = "astrocommunity.editing-support.undotree" },
 
+  -- Markdown Preview: opens Markdown in browser via <Leader>mp/<Leader>mt
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+
   -- nvim-spider: smarter word motions; remaps w/e/b/ge in normal/visual/operator-pending modes
   { import = "astrocommunity.motion.nvim-spider" },
 
