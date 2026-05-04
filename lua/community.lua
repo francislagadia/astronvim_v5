@@ -12,10 +12,10 @@ return {
   { import = "astrocommunity.ai.opencode-nvim" },
 
   -- Avante: AI sidebar/chat/edit; default keymaps under <Leader>A
-  { import = "astrocommunity.completion.avante-nvim" },
+  { import = "astrocommunity.ai.avante-nvim" },
 
   -- Codex.nvim: lightweight AI popup; community spec maps <Leader>Oc by default
-  { import = "astrocommunity.completion.codex-nvim" },
+  { import = "astrocommunity.ai.codex-nvim" },
 
   -- Copilot + cmp/blink integration: wires GitHub Copilot suggestions into completion (may affect <Tab>)
   { import = "astrocommunity.completion.copilot-lua-cmp" },
@@ -27,7 +27,7 @@ return {
   { import = "astrocommunity.editing-support.conform-nvim" },
 
   -- CopilotChat.nvim: chat UI; default prefix <Leader>P (configurable via g.copilot_chat_prefix)
-  { import = "astrocommunity.editing-support.copilotchat-nvim" },
+  { import = "astrocommunity.ai.copilotchat-nvim" },
 
   -- Undotree: visual undo history; community spec maps <Leader>fu (collides with AstroNvim "find undo")
   { import = "astrocommunity.editing-support.undotree" },
